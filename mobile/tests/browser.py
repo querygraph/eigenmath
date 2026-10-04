@@ -50,12 +50,19 @@ async def main(args):
                         'cells': [{'id': uuid4().hex[:8], 'cell_type': 'code', 'metadata': {}, 'source': source, 'outputs': [], 'execution_count': None} for source in code]}
             await api(page, path, 'PUT', {'type': 'notebook', 'format': 'json', 'content': notebook})
             try:
-                route = '/notebooks/' if args.frontend == 'notebook' else '/lab/workspaces/eigenmath-mobile-test/tree/'
+                route = '/notebooks/' if args.frontend == 'notebook' else '/lab/workspaces/' + name.removesuffix('.ipynb') + '/tree/'
                 await page.goto(args.base_url.rstrip('/') + route + quote(name), wait_until='networkidle')
                 await page.wait_for_selector('#eigenmath-controls:not([hidden])', timeout=45000)
                 await page.wait_for_function('!document.querySelector("#eigenmath-controls button").disabled')
                 assert await page.locator('#eigenmath-controls').count() == 1
-                panel = page.locator('.jp-NotebookPanel:visible')
+                if args.frontend == 'lab':
+                    tab = page.get_by_role('tab', name=name, exact=True)
+                    await tab.click()
+                    tab_id = await tab.get_attribute('id')
+                    assert tab_id
+                    panel = page.locator('.jp-NotebookPanel[aria-labelledby="' + tab_id + '"]')
+                else:
+                    panel = page.locator('.jp-NotebookPanel:visible')
                 editor = panel.locator('.jp-CodeCell .cm-content').nth(2)
                 await editor.click()
                 await page.set_viewport_size({'width': 390, 'height': 360})
