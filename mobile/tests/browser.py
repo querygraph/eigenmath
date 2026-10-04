@@ -39,6 +39,7 @@ async def main(args):
         page = await context.new_page()
         await page.goto(args.base_url.rstrip('/') + '/tree', wait_until='networkidle')
         for language, kernel in [('python', args.python_kernel), ('ocaml', args.ocaml_kernel)]:
+            await page.set_viewport_size({'width': 1440 if args.frontend == 'lab' else 390, 'height': 844})
             name = 'reusable-controls-' + uuid4().hex + '.ipynb'
             path = '/api/contents/' + quote(name)
             code = (['def matvec(xs):\n    return sum(xs)', 'response = matvec([1., 2.])', 'print(f"REUSABLE_CONTROLS_OK {response:.1f}")']
