@@ -1,14 +1,37 @@
 # Eigenmath
 
-Six complete mathematics companions, with executable Python and native OCaml editions. Each notebook includes the full text, embedded figures, numerical inputs, code, and saved outputs. The notebooks are self-contained; execution needs no private datasets or credentials.
+The public home of the executable mathematics companions for **Eigen Times, Eigen Hacks, and Anthropology**. The projects turn article text into vectors, organize news along measured directions, and explore the people and institutions behind technology. These companions explain the mathematics through small examples you can read, run, and change.
+
+Six complete teaching notebooks provide paired Python and native OCaml editions of three companion papers. Each includes the full text, embedded figures, numerical inputs, code, and saved outputs. The notebooks are self-contained; execution needs no private datasets or credentials. Their synthetic and frozen examples preserve the published calculations rather than refreshing the live newspapers or fitting production models.
+
+## The projects and sites
+
+| Project | Site | What to explore |
+| --- | --- | --- |
+| Eigen Times | [eigentimes.com](https://eigentimes.com/) · [second edition](https://eigentimes.com/v2/) | A newspaper organized in a fixed eigenbasis of news; new articles are measured against the existing basis. |
+| Eigen Hacks | [eigenhacks.com](https://eigenhacks.com/) · [people × news vectors](https://eigenhacks.com/people-vectors/) | The Hacker News corpus and its people and news directions. |
+| Anthropology | [anthropolo.gy](https://anthropolo.gy/) · [people vectors](https://anthropolo.gy/vectors) · [daily edition](https://anthropolo.gy/daily) | A sourced graph of people, companies, institutions, and investors, with dated discoveries and coverage measurements. |
+| First Pair Press | [firstpair.org](https://firstpair.org/) | The companion papers and related research in web, PDF, and EPUB reading editions. |
+
+The daily people editions on [Eigen Hacks](https://eigenhacks.com/people-of-day/) and [Eigen Times](https://eigentimes.com/people-of-day/) connect newly sourced Anthropology events with recent article activity in the existing news spaces.
+
+## Companion papers and notebooks
 
 | Companion | Python | OCaml |
 | --- | --- | --- |
-| Eigen Times mathematics | [Notebook](notebooks/eigentimes-math-python.ipynb) | [Notebook](notebooks/eigentimes-math-ocaml.ipynb) |
-| Eigen Times history mathematics | [Notebook](notebooks/eigentimes-history-math-python.ipynb) | [Notebook](notebooks/eigentimes-history-math-ocaml.ipynb) |
-| Mathematics of anthropology | [Notebook](notebooks/anthropology-math-python.ipynb) | [Notebook](notebooks/anthropology-math-ocaml.ipynb) |
+| [The Mathematics of Eigen Times](https://firstpair.org/books/eigentimes-math/) | [Notebook](notebooks/eigentimes-math-python.ipynb) | [Notebook](notebooks/eigentimes-math-ocaml.ipynb) |
+| [Eigen Times History Math](https://github.com/alexy/eigentimes-math/tree/main/papers/eigentimes-history-math) | [Notebook](notebooks/eigentimes-history-math-python.ipynb) | [Notebook](notebooks/eigentimes-history-math-ocaml.ipynb) |
+| [The Mathematics of Anthropology](https://firstpair.org/books/anthropology-math/) | [Notebook](notebooks/anthropology-math-python.ipynb) | [Notebook](notebooks/anthropology-math-ocaml.ipynb) |
 
-These are the unchanged 1.0.0 teaching editions. [The manifest](notebooks/manifest.json) records their original source revisions and checksums. The public repository contains a fresh history of the notebooks and shared controls; book manuscripts and deployment configuration stay in their owning repositories.
+**The Mathematics of Eigen Times** develops text vectors, covariance, eigenvectors, SVD and latent semantic analysis, rotation, projection, and the newspaper's clustering and statistical tests. Read it on [FirstPair](https://firstpair.org/read/eigentimes-math/) or download the [PDF](https://firstpair.org/eigentimes-math/pdf/) and [EPUB](https://firstpair.org/eigentimes-math/epub/). Its manuscript and build tools belong to [alexy/eigentimes-math](https://github.com/alexy/eigentimes-math).
+
+**Eigen Times History Math: A Worked Companion to Eigen Times Math History** extends the executable lessons with techniques from the history companion, including definitions, a glossary, an index, and paired numerical laboratories. Its [paper source](https://github.com/alexy/eigentimes-math/tree/main/papers/eigentimes-history-math) belongs to the same book repository. The complete public text is available in the notebooks above; this companion is not yet listed on the FirstPair shelf.
+
+**The Mathematics of Anthropology** builds from article coordinates to people vectors, navigation in both directions, changing coverage, and ontology calibration. Read it on [FirstPair](https://firstpair.org/read/anthropology-math/) or download the [PDF](https://firstpair.org/anthropology-math/pdf/) and [EPUB](https://firstpair.org/anthropology-math/epub/). Its [paper source](https://github.com/querygraph/anthropology/tree/main/papers/mathematics-of-anthropology) belongs to [querygraph/anthropology](https://github.com/querygraph/anthropology); a [public tutorial-source bundle](https://firstpair.org/read/anthropology-math/chapters/anthropology-math-sources.zip) is also available from FirstPair.
+
+For the research behind the teaching papers, see [Eigen Times: A Newspaper in the Eigenbasis of the News](https://firstpair.org/books/eigentimes/) and [The Dual Geometry of People and News](https://firstpair.org/books/anthropology/).
+
+These are the unchanged 1.0.0 notebook editions. Paper and notebook releases have separate version labels; [the manifest](notebooks/manifest.json) records each notebook's original source revision and checksum. This [public GitHub repository](https://github.com/querygraph/eigenmath) owns the released notebooks and shared mobile controls. The book repositories linked above and the [Eigen Times implementation](https://github.com/alexy/eigentimes) currently require repository access; FirstPair provides the public reading editions.
 
 ## Run locally
 
