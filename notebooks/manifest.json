@@ -1,0 +1,62 @@
+[
+  {
+    "file": "notebooks/eigentimes-math-python.ipynb",
+    "sha256": "b1f6d9539a5ea5bf4a9ad9229875690f7996883d8d32d59debbe6c768b98803c",
+    "bytes": 2367619,
+    "language": "python",
+    "code_cells": 39,
+    "notebook_version": "1.0.0",
+    "source_repository": "alexy/eigentimes-math",
+    "source_commit": "fe8e8983437925dd8867cdb88bd8128667868abc"
+  },
+  {
+    "file": "notebooks/eigentimes-math-ocaml.ipynb",
+    "sha256": "7ff650d71a8c5d4830e5e71ea5a197db481a53746355f5ee86318be759675cac",
+    "bytes": 2475560,
+    "language": "ocaml",
+    "code_cells": 39,
+    "notebook_version": "1.0.0",
+    "source_repository": "alexy/eigentimes-math",
+    "source_commit": "fe8e8983437925dd8867cdb88bd8128667868abc"
+  },
+  {
+    "file": "notebooks/eigentimes-history-math-python.ipynb",
+    "sha256": "c0faf91ad42b86c43b5eb7c94f9bb8cdef5844c87d84f4d0de10cde9ac4d1516",
+    "bytes": 523560,
+    "language": "python",
+    "code_cells": 23,
+    "notebook_version": "1.0.0",
+    "source_repository": "alexy/eigentimes-math",
+    "source_commit": "ebc2951adb88a5a9ecb36e1a4530d16f2d6a9186"
+  },
+  {
+    "file": "notebooks/eigentimes-history-math-ocaml.ipynb",
+    "sha256": "4d783e53fab9ff6023634f2237c855c1c93d298bab4505b63061b6687dec8fe9",
+    "bytes": 666152,
+    "language": "ocaml",
+    "code_cells": 23,
+    "notebook_version": "1.0.0",
+    "source_repository": "alexy/eigentimes-math",
+    "source_commit": "ebc2951adb88a5a9ecb36e1a4530d16f2d6a9186"
+  },
+  {
+    "file": "notebooks/anthropology-math-python.ipynb",
+    "sha256": "559121b00d6df3184fafed3587a4b7f823ecfb677b01bcce0a2c0148a3dd6225",
+    "bytes": 2214315,
+    "language": "python",
+    "code_cells": 32,
+    "notebook_version": "1.0.0",
+    "source_repository": "querygraph/anthropology",
+    "source_commit": "ac6124294e54b592fa068d221906cf81fdc8a121"
+  },
+  {
+    "file": "notebooks/anthropology-math-ocaml.ipynb",
+    "sha256": "775639976a8f0859010d0eec288bd3cb5a6a03640c5c3cf71d640fa274fcb352",
+    "bytes": 2439765,
+    "language": "ocaml",
+    "code_cells": 32,
+    "notebook_version": "1.0.0",
+    "source_repository": "querygraph/anthropology",
+    "source_commit": "ac6124294e54b592fa068d221906cf81fdc8a121"
+  }
+]

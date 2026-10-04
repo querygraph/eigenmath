@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+node_modules/
+mobile/lib/
+mobile/dist/
+mobile/build/
+mobile/*.egg-info/
+mobile/eigenmath_mobile/labextension/
+.validation/
+*.log

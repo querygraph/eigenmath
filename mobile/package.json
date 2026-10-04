@@ -1,0 +1,30 @@
+{
+  "name": "@querygraph/eigenmath-mobile",
+  "version": "0.1.0",
+  "description": "Reusable mobile notebook controls for Jupyter Notebook 7 and JupyterLab 4",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "files": ["lib/**/*", "style/**/*"],
+  "scripts": {
+    "build:lib": "tsc",
+    "test": "npm run build:lib && node --test tests/*.test.mjs",
+    "build": "npm run build:lib && jupyter labextension build ."
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^4.5.11",
+    "@jupyterlab/notebook": "^4.5.11"
+  },
+  "devDependencies": {"typescript": "~5.9.3", "@jupyterlab/builder": "^4.5.11"},
+  "jupyterlab": {
+    "extension": true,
+    "outputDir": "eigenmath_mobile/labextension",
+    "sharedPackages": {
+      "@jupyterlab/application": {"bundled": false, "singleton": true},
+      "@jupyterlab/notebook": {"bundled": false, "singleton": true}
+    }
+  },
+  "repository": {"type": "git", "url": "https://github.com/querygraph/eigenmath.git", "directory": "mobile"}
+}
