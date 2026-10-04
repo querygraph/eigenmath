@@ -31,7 +31,7 @@ The daily people editions on [Eigen Hacks](https://eigenhacks.com/people-of-day/
 
 For the research behind the teaching papers, see [Eigen Times: A Newspaper in the Eigenbasis of the News](https://firstpair.org/books/eigentimes/) and [The Dual Geometry of People and News](https://firstpair.org/books/anthropology/).
 
-These are the unchanged 1.0.0 notebook editions. Paper and notebook releases have separate version labels; [the manifest](notebooks/manifest.json) records each notebook's original source revision and checksum. This [public GitHub repository](https://github.com/querygraph/eigenmath) owns the released notebooks and shared mobile controls. The book repositories linked above and the [Eigen Times implementation](https://github.com/alexy/eigentimes) currently require repository access; FirstPair provides the public reading editions.
+The shared Eigen Times/Eigen Hacks pair is notebook edition **1.0.1**, containing book **1.1.2** with stepwise foundations, worked derivations, a glossary and an index. The History Math and Anthropology Math pairs remain at 1.0.0. The original six editions are preserved in [tag v0.1.0](https://github.com/querygraph/eigenmath/tree/v0.1.0/notebooks). Paper, notebook and shelf releases are published separately; [the manifest](notebooks/manifest.json) records each notebook's original source revision and checksum. This [public GitHub repository](https://github.com/querygraph/eigenmath) owns the released notebooks and shared mobile controls. The book repositories linked above and the [Eigen Times implementation](https://github.com/alexy/eigentimes) currently require repository access; FirstPair provides the public reading editions.
 
 ## Run locally
 
@@ -73,6 +73,6 @@ python scripts/validate_notebooks.py --checksums-only
 python scripts/validate_notebooks.py --python-kernel eigenmath-python --ocaml-kernel ocaml-jupyter
 ```
 
-Full validation executes all six notebooks in fresh kernels and empty temporary working directories. It compares 356 scalar results with the released outputs and checks 178 Python/OCaml pairs across 188 code cells. Executed validation copies and reports do not overwrite the released notebooks.
+Full validation executes all six notebooks in fresh kernels and empty temporary working directories. It compares 452 scalar results with the released outputs and checks 226 Python/OCaml pairs across 218 code cells. Executed validation copies and reports do not overwrite the released notebooks.
 
 To generate a future edition from its book source, clone this repository beside the owning book repository, or set `EIGENMATH_ROOT` to this checkout. The book authoring scripts resolve notebook artifacts here. Preserve existing editions in Git tags and update the manifest when releasing a new edition.

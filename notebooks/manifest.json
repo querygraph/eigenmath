@@ -1,23 +1,23 @@
 [
   {
     "file": "notebooks/eigentimes-math-python.ipynb",
-    "sha256": "b1f6d9539a5ea5bf4a9ad9229875690f7996883d8d32d59debbe6c768b98803c",
-    "bytes": 2367619,
+    "sha256": "12153d4d1ed77dacfea4fab53d499ca10d8fde83f48883ebf1522361b4ad97da",
+    "bytes": 2593002,
     "language": "python",
-    "code_cells": 39,
-    "notebook_version": "1.0.0",
+    "code_cells": 54,
+    "notebook_version": "1.0.1",
     "source_repository": "alexy/eigentimes-math",
-    "source_commit": "fe8e8983437925dd8867cdb88bd8128667868abc"
+    "source_commit": "c0d75f51ab0064a7803b8ade4fd22bd4fdc879f4"
   },
   {
     "file": "notebooks/eigentimes-math-ocaml.ipynb",
-    "sha256": "7ff650d71a8c5d4830e5e71ea5a197db481a53746355f5ee86318be759675cac",
-    "bytes": 2475560,
+    "sha256": "f7aeabc5516c756ed0c1ada7b8a98061f5e8d3c8465d050ac3da9e45dabe4f23",
+    "bytes": 2738037,
     "language": "ocaml",
-    "code_cells": 39,
-    "notebook_version": "1.0.0",
+    "code_cells": 54,
+    "notebook_version": "1.0.1",
     "source_repository": "alexy/eigentimes-math",
-    "source_commit": "fe8e8983437925dd8867cdb88bd8128667868abc"
+    "source_commit": "c0d75f51ab0064a7803b8ade4fd22bd4fdc879f4"
   },
   {
     "file": "notebooks/eigentimes-history-math-python.ipynb",
